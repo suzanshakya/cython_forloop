@@ -10,13 +10,13 @@ cpdef python_for(list fills):
         fill.a = 'word'
 
 
-cpdef cython_for(list fills):
+cpdef typed_for(list fills):
     cdef Fill fill
     for fill in fills:
         fill.a = 'word'
 
 
-cpdef fast_for(list fills):
+cpdef indexed_for(list fills):
     cdef int n_fills = len(fills)
     cdef int fill_idx
 
