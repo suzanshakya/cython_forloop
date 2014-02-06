@@ -1,6 +1,9 @@
 cdef class Fill:
     cdef public str a
 
+class PFill:
+    pass
+
 
 fills = [Fill() for i in range(1000)]
 
